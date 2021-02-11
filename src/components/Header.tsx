@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header>
-      <div className='relative bg-white'>
+      <div className='relative bg-trueGray-700'>
         <div className='flex items-center justify-between px-4 py-6 mx-auto max-w-7xl sm:px-6 md:justify-start md:space-x-10 lg:px-8'>
           <div className='flex justify-start lg:w-0 lg:flex-1'>
             <a href='#'>
@@ -40,13 +40,13 @@ const Header = () => {
           <nav className='hidden space-x-10 md:flex'>
             <a
               href='/maps'
-              className='text-base font-medium text-gray-500 hover:text-gray-900'
+              className='text-base font-medium text-gray-100 hover:text-gray-400'
             >
               Projects
             </a>
             <a
               href='#'
-              className='text-base font-medium text-gray-500 hover:text-gray-900'
+              className='text-base font-medium text-gray-100 hover:text-gray-400'
             >
               Contact
             </a>

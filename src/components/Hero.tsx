@@ -1,11 +1,11 @@
 const Hero = () => {
   return (
-    <div className='min-h-screen bg-white'>
+    <div className='min-h-screen bg-trueGray-700'>
       <main>
         <div>
           {/* Hero card */}
           <div className='relative'>
-            <div className='absolute inset-x-0 bottom-0 bg-gray-100 h-1/2'></div>
+            <div className='absolute inset-x-0 bottom-0 bg-trueGray-900 h-1/2'></div>
             <div className='mx-auto max-w-7xl sm:px-6 lg:px-8'>
               <div className='relative shadow-xl sm:rounded-2xl sm:overflow-hidden'>
                 <div className='absolute inset-0'>
@@ -45,7 +45,7 @@ const Hero = () => {
           </div>
 
           {/* Logo cloud */}
-          <div className='bg-gray-100'>
+          <div className='bg-trueGray-900'>
             <div className='px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8'>
               <p className='text-sm font-semibold tracking-wide text-center text-gray-500 uppercase'>
                 Trusted by over 5 very average small businesses
