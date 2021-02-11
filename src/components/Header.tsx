@@ -4,7 +4,7 @@ const Header = () => {
       <div className='relative'>
         <div className='flex items-center justify-between px-4 py-6 mx-auto max-w-7xl sm:px-6 md:justify-start md:space-x-10 lg:px-8'>
           <div className='flex justify-start lg:w-0 lg:flex-1'>
-            <a href='#'>
+            <a href='/'>
               <span className='sr-only'>Workflow</span>
               <img
                 className='w-auto h-8 sm:h-10'
