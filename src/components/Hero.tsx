@@ -33,7 +33,7 @@ const Hero = () => {
                 >
                   <path
                     strokeLinecap='round'
-                    stroke-linejoin='round'
+                    strokeLinejoin='round'
                     strokeWidth='2'
                     d='M4 6h16M4 12h16M4 18h16'
                   />
@@ -61,9 +61,9 @@ const Hero = () => {
                     aria-hidden='true'
                   >
                     <path
-                      fill-rule='evenodd'
+                      fillRule='evenodd'
                       d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
-                      clip-rule='evenodd'
+                      clipRule='evenodd'
                     />
                   </svg>
                 </button>
@@ -97,7 +97,7 @@ const Hero = () => {
                           >
                             <path
                               strokeLinecap='round'
-                              stroke-linejoin='round'
+                              strokeLinejoin='round'
                               strokeWidth='2'
                               d='M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4'
                             />
@@ -130,7 +130,7 @@ const Hero = () => {
                           >
                             <path
                               strokeLinecap='round'
-                              stroke-linejoin='round'
+                              strokeLinejoin='round'
                               strokeWidth='2'
                               d='M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z'
                             />
@@ -163,7 +163,7 @@ const Hero = () => {
                           >
                             <path
                               strokeLinecap='round'
-                              stroke-linejoin='round'
+                              strokeLinejoin='round'
                               strokeWidth='2'
                               d='M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z'
                             />
@@ -195,7 +195,7 @@ const Hero = () => {
                           >
                             <path
                               strokeLinecap='round'
-                              stroke-linejoin='round'
+                              strokeLinejoin='round'
                               strokeWidth='2'
                               d='M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
                             />
@@ -289,7 +289,7 @@ const Hero = () => {
                       >
                         <path
                           strokeLinecap='round'
-                          stroke-linejoin='round'
+                          strokeLinejoin='round'
                           strokeWidth='2'
                           d='M6 18L18 6M6 6l12 12'
                         />
@@ -315,7 +315,7 @@ const Hero = () => {
                         >
                           <path
                             strokeLinecap='round'
-                            stroke-linejoin='round'
+                            strokeLinejoin='round'
                             strokeWidth='2'
                             d='M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4'
                           />
@@ -342,7 +342,7 @@ const Hero = () => {
                         >
                           <path
                             strokeLinecap='round'
-                            stroke-linejoin='round'
+                            strokeLinejoin='round'
                             strokeWidth='2'
                             d='M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z'
                           />
@@ -369,7 +369,7 @@ const Hero = () => {
                         >
                           <path
                             strokeLinecap='round'
-                            stroke-linejoin='round'
+                            strokeLinejoin='round'
                             strokeWidth='2'
                             d='M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z'
                           />
@@ -396,7 +396,7 @@ const Hero = () => {
                         >
                           <path
                             strokeLinecap='round'
-                            stroke-linejoin='round'
+                            strokeLinejoin='round'
                             strokeWidth='2'
                             d='M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
                           />
