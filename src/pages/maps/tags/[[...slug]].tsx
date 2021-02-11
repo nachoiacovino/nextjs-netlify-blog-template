@@ -1,13 +1,13 @@
-import { GetStaticPaths, GetStaticProps } from "next";
-import Layout from "../../../components/Layout";
-import BasicMeta from "../../../components/meta/BasicMeta";
-import OpenGraphMeta from "../../../components/meta/OpenGraphMeta";
-import TwitterCardMeta from "../../../components/meta/TwitterCardMeta";
-import TagPostList from "../../../components/TagPostList";
-import config from "../../../lib/config";
-import { countPosts, listPostContent, PostContent } from "../../../lib/posts";
-import { getTag, listTags, TagContent } from "../../../lib/tags";
-import Head from "next/head";
+import { GetStaticPaths, GetStaticProps } from 'next';
+
+import Layout from '../../../components/Layout';
+import BasicMeta from '../../../components/meta/BasicMeta';
+import OpenGraphMeta from '../../../components/meta/OpenGraphMeta';
+import TwitterCardMeta from '../../../components/meta/TwitterCardMeta';
+import TagPostList from '../../../components/TagPostList';
+import config from '../../../lib/config';
+import { countPosts, listPostContent, PostContent } from '../../../lib/posts';
+import { getTag, listTags, TagContent } from '../../../lib/tags';
 
 type Props = {
   posts: PostContent[];
@@ -19,7 +19,7 @@ type Props = {
   };
 };
 export default function Index({ posts, tag, pagination, page }: Props) {
-  const url = `/posts/tags/${tag.name}` + (page ? `/${page}` : "");
+  const url = `/maps/tags/${tag.name}` + (page ? `/${page}` : '');
   const title = tag.name;
   return (
     <Layout>
@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const posts = listPostContent(
     page ? parseInt(page as string) : 1,
     config.posts_per_page,
-    slug
+    slug,
   );
   const tag = getTag(slug);
   const pagination = {
@@ -68,7 +68,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
           }
         : {
             params: { slug: [tag.slug, (page + 1).toString()] },
-          }
+          },
     );
   });
   return {

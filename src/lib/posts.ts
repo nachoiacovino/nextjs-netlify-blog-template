@@ -1,9 +1,9 @@
-import fs from "fs";
-import matter from "gray-matter";
-import path from "path";
-import yaml from "js-yaml";
+import fs from 'fs';
+import matter from 'gray-matter';
+import yaml from 'js-yaml';
+import path from 'path';
 
-const postsDirectory = path.join(process.cwd(), "src/pages/posts");
+const postsDirectory = path.join(process.cwd(), 'src/pages/maps');
 
 export type PostContent = {
   readonly date: string;
@@ -18,19 +18,19 @@ function fetchPostContent(): PostContent[] {
   if (postCache) {
     return postCache;
   }
-  // Get file names under /posts
+  // Get file names under /maps
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames
-    .filter((it) => it.endsWith(".mdx"))
+    .filter((it) => it.endsWith('.mdx'))
     .map((fileName) => {
       // Read markdown file as string
       const fullPath = path.join(postsDirectory, fileName);
-      const fileContents = fs.readFileSync(fullPath, "utf8");
+      const fileContents = fs.readFileSync(fullPath, 'utf8');
 
       // Use gray-matter to parse the post metadata section
       const matterResult = matter(fileContents, {
         engines: {
-          yaml: (s) => yaml.safeLoad(s, { schema: yaml.JSON_SCHEMA }) as object,
+          yaml: (s) => yaml.load(s, { schema: yaml.JSON_SCHEMA }) as object,
         },
       });
       const matterData = matterResult.data as {
@@ -39,12 +39,12 @@ function fetchPostContent(): PostContent[] {
         tags: string[];
         slug: string;
       };
-      const slug = fileName.replace(/\.mdx$/, "");
+      const slug = fileName.replace(/\.mdx$/, '');
 
       // Validate slug string
       if (matterData.slug !== slug) {
         throw new Error(
-          "slug field not match with the path of its content source"
+          'slug field not match with the path of its content source',
         );
       }
 
@@ -63,14 +63,14 @@ function fetchPostContent(): PostContent[] {
 
 export function countPosts(tag?: string): number {
   return fetchPostContent().filter(
-    (it) => !tag || (it.tags && it.tags.includes(tag))
+    (it) => !tag || (it.tags && it.tags.includes(tag)),
   ).length;
 }
 
 export function listPostContent(
   page: number,
   limit: number,
-  tag?: string
+  tag?: string,
 ): PostContent[] {
   return fetchPostContent()
     .filter((it) => !tag || (it.tags && it.tags.includes(tag)))
