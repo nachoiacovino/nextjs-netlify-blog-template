@@ -16,18 +16,18 @@
     "autoprefixer": "^10.2.4",
     "date-fns": "^2.11.1",
     "gray-matter": "^4.0.2",
-    "js-yaml": "^3.14.0",
+    "js-yaml": "^4.0.0",
     "next": "^10.0.6",
-    "next-mdx-enhanced": "^3.1.0",
+    "next-mdx-enhanced": "^5.0.0",
     "normalize.css": "^8.0.1",
     "postcss": "^8.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-instagram-embed": "^1.5.0",
+    "react-instagram-embed": "^2.0.0",
     "react-schemaorg": "^1.2.0",
     "react-twitter-embed": "^3.0.3",
     "react-youtube": "^7.11.3",
-    "schema-dts": "^0.6.0",
+    "schema-dts": "^0.8.2",
     "tailwindcss": "^2.0.3"
   },
   "devDependencies": {
@@ -36,7 +36,7 @@
     "@types/react": "^17.0.1",
     "jest": "^26.3.0",
     "ts-jest": "^26.2.0",
-    "typescript": "^3.8.3",
+    "typescript": "^4.1.5",
     "yaml-loader": "^0.6.0"
   }
 }
