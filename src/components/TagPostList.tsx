@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { PostContent } from '../lib/posts';
 import { TagContent } from '../lib/tags';
 import Pagination from './Pagination';
